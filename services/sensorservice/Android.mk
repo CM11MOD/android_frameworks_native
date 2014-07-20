@@ -33,6 +33,7 @@ ifneq ($(BOARD_SYSFS_LIGHT_SENSOR),)
 endif
 
 LOCAL_MODULE:= libsensorservice
+LOCAL_CLANG := true
 
 include $(BUILD_SHARED_LIBRARY)
 
@@ -51,5 +52,6 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE:= sensorservice
+LOCAL_CLANG := true
 
 include $(BUILD_EXECUTABLE)
